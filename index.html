@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Basic A-Frame Scene</title>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+</head>
+<body>
+
+  <a-scene>
+
+    <!-- Camera -->
+    <a-entity position="38.62951 0.91022 -41.27654" rotation="-0.3781521447863434 97.91619535667716 0.982049660854231">
+      <a-camera wasd-controls look-controls></a-camera>
+    </a-entity>
+
+    <!-- Ground Plane -->
+    <!-- <a-plane 
+      rotation="-90 0 0"
+      width="10"
+      height="10"
+      color="#7BC8A4">
+    </a-plane> -->
+
+    <!-- Box 1 -->
+    <!-- <a-box 
+      position="-1 0.5 -3"
+      depth="1"
+      height="1"
+      width="1"
+      color="#4CC3D9"
+      shadow>
+    </a-box> -->
+
+    <!-- Box 2 -->
+    <!-- <a-box 
+      position="1 0.5 -3"
+      depth="1"
+      height="1"
+      width="1"
+      color="#EF2D5E"
+      shadow>
+    </a-box> -->
+
+    <a-entity gltf-model="house.gltf"></a-entity>
+    <a-entity gltf-model="url(kitchen.gltf)"></a-entity>
+    <a-entity gltf-model="url(lr.gltf)"></a-entity>
+    <a-entity gltf-model="url(pool.gltf)"></a-entity>
+    <a-entity gltf-model="url(pool_water.gltf)"></a-entity>
+
+    <a-entity gltf-model="url(bedroom.gltf)"></a-entity>
+    
+
+    <!-- Light -->
+    <a-light type="ambient" intensity="0.6"></a-light>
+    <a-light type="directional" position="2 4 2"></a-light>
+
+    <!-- Sky -->
+    <a-sky color="#ECECEC"></a-sky>
+
+  </a-scene>
+
+</body>
+</html>
